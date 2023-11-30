@@ -29,7 +29,7 @@ const States = () => {
       if (parseInt(el.textContent) === goal) {
         clearInterval(count);
       }
-    }, 2000 / goal);
+    }, 2500 / goal);
   };
 
   const handleScroll = () => {
