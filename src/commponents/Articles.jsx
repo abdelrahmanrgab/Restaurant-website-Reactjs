@@ -1,8 +1,8 @@
 import React from 'react';
+import './Article.css';
 import article1 from '../img/article1.png';
 import article2 from '../img/article2.png';
 import article3 from '../img/article3.png';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'; 
 

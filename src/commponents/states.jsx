@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './States.css';
 
 const States = () => {
   const statistic = [
