@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import './States.css';
+import './Statictics1.css';
 
-const States = () => {
+
+
+const Statictics1 = () => {
   const statistic = [
     {
       stateName: "Years Of Experience",
@@ -63,4 +65,4 @@ const States = () => {
   );
 };
 
-export default States;
+export default Statictics1;

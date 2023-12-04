@@ -2,11 +2,28 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import reducers from './store/reducer';
+import { createStore } from 'redux';
+import {Provider} from 'react-redux'
+
+
+// store (state)
+let store = createStore(reducers,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+
+
+// store.subscribe(() => console.log(store.getState()))
+// //dispatch
+// store.dispatch(increment());
+// store.dispatch(increment());
+// store.dispatch(decrement());
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Provider store={store}>
     <App />
+    </Provider>
   </React.StrictMode>
 );
 

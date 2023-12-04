@@ -1,14 +1,12 @@
 import React from 'react';
-import './Project.css';
-import project1 from '../img/project1.png';
-import project2 from '../img/project2.png';
-import project3 from '../img/project3.png';
-import project4 from '../img/project4.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons'; 
+import './Project1.css';
+import project1 from '../../../../assets/images/project1.png'
+import project2 from '../../../../assets/images/project2.png'
+import project3 from '../../../../assets/images/project3.png'
+import project4 from '../../../../assets/images/project4.png'
+import Icon from '../../../../assets/images/Icon.svg'
 
-
-const Projects = () => {
+const Project1 = () => {
     let header = {
         headerTitle:"Modern Kitchan" ,   
         headerDescribe:`It is a long established fact that a reader will be distracted by the of 
@@ -18,23 +16,27 @@ const Projects = () => {
     let projectsBox = [
         {
             image:project1 ,   
+            icon:Icon,   
             title:"Modern Kitchan" ,   
             describe:"Decor / Artchitecture" ,
             link:"#",  
         },
         {
             image:project2 ,   
+            icon:Icon,   
             title:"Modern Kitchan" ,   
             describe:"Decor / Artchitecture" ,
             link:"#",     
         },        {
             image:project3 ,   
+            icon:Icon,   
             title:"Modern Kitchan" ,   
             describe:"Decor / Artchitecture" ,
             link:"#",     
         },
         {
             image:project4 ,   
+            icon:Icon,   
             title:"Modern Kitchan" ,   
             describe:"Decor / Artchitecture" ,
             link:"#",     
@@ -67,7 +69,7 @@ const Projects = () => {
             </div>
             <a href={data.link} className='go-to'>
             <span>
-            <FontAwesomeIcon icon={faAngleRight} />
+            <img src={data.icon} alt='icon' />
             </span>
             </a> 
           </div>
@@ -78,4 +80,4 @@ const Projects = () => {
     </div>   )
 }
 
-export default Projects;
+export default Project1;

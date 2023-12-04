@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
 :root{
 --main-color2:#F4F0EC;
@@ -58,7 +57,6 @@ flex-direction: column;
 justify-content: space-between;
 align-items: center;
 border-right: solid 1px var(--main-color1);
-font-family: serif;
 }
 .state-box:last-child{
 border:none;
@@ -73,7 +71,6 @@ font-size: 6em;
 color: var(--description-text);
 font-weight: 400;
 letter-spacing: 0.22px;
-font-family: sans-serif;
 text-align: center;
 font-size: 0.9em;
 }
