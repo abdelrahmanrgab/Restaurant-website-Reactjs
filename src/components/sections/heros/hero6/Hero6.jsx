@@ -1,22 +1,10 @@
-import React from "react";
+import React from 'react';
+import "./hero6.css";
 
-import "./hero.css";
-import { useSelector } from "react-redux";
-
-const Hero1 = () => {
-  const { hero } = useSelector((state) => state.template);
+const Hero6 = () => {
   return (
-    <div className="landing design-1 " style={{ backgroundImage: `url(${hero.imgUrl})` }}>
-      <div className="overlay"></div>
-      <div className="text">
-        <div className="content">
-          <h2>{hero.title}</h2>
-          <p>{hero.description}</p>
-          <button className="landing-btn">{hero.buttonText} </button>
-        </div>
-      </div>
-    </div>
-  );
-};
+    <div>Hero6</div>
+  )
+}
 
-export default Hero1;
+export default Hero6;
